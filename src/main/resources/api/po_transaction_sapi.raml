@@ -1,0 +1,19 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/f0ae1068-5af5-47d5-a651-aabbd8626f44/ # 
+title: po_transaction_sapi
+
+/pos_transaction:
+  get:
+    queryParameters:
+      transaction_id:
+        type: integer
+        required: true
+    responses:
+      200:
+        body:
+          application/json:
+      404:
+        body:
+          application/json:
+
+            
